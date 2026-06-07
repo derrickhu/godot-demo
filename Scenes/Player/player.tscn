@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://6dhn86pfihp8"]
+
+[ext_resource type="Script" uid="uid://ct3q36l217ocs" path="res://Scenes/Player/player.gd" id="1_a3d8c"]
+[ext_resource type="Texture2D" uid="uid://drwtojxdua4o8" path="res://Art/Images/avatar_mage.png" id="2_xpcdj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(130, 132)
+
+[node name="Player" type="CharacterBody2D" unique_id=808725935]
+script = ExtResource("1_a3d8c")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1753086181]
+position = Vector2(-2.37501, 3.7499938)
+scale = Vector2(0.33785528, 0.34918475)
+texture = ExtResource("2_xpcdj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=592278269]
+position = Vector2(-2, 3)
+shape = SubResource("RectangleShape2D_1")

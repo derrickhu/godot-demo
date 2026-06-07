@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c5pabojwh1sff"]
+
+[ext_resource type="PackedScene" uid="uid://wl05ecr7oseg" path="res://Scenes/Coin/coin.tscn" id="1_v1qfn"]
+[ext_resource type="PackedScene" uid="uid://6dhn86pfihp8" path="res://Scenes/Player/player.tscn" id="2_hh5uf"]
+
+[node name="Node2D" type="Node2D" unique_id=1874459587]
+
+[node name="Coin" parent="." unique_id=1359940399 instance=ExtResource("1_v1qfn")]
+position = Vector2(292, 6)
+
+[node name="Player" parent="." unique_id=808725935 instance=ExtResource("2_hh5uf")]
+position = Vector2(595, 239)
+
+[node name="Coin2" parent="." unique_id=1561767332 instance=ExtResource("1_v1qfn")]
+position = Vector2(-204, -4)
+
+[node name="Coin3" parent="." unique_id=405763751 instance=ExtResource("1_v1qfn")]
+
+[node name="Coin4" parent="." unique_id=721189298 instance=ExtResource("1_v1qfn")]
+position = Vector2(132, -2)
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=1301093456]
+offset_left = 9.0
+offset_top = 10.0
+offset_right = 67.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.26178932, 0.8953111, 0.86520016, 1)
+text = "分数：0"
